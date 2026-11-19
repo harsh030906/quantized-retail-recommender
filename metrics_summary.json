@@ -1,0 +1,98 @@
+{
+  "vocab": [
+    "<PAD>",
+    "Milk",
+    "Bread",
+    "Eggs",
+    "Butter",
+    "Coffee",
+    "Cereal",
+    "Orange Juice",
+    "Pasta",
+    "Tomato Sauce",
+    "Parmesan Cheese",
+    "Olive Oil",
+    "Garlic",
+    "Basil",
+    "Potato Chips",
+    "Salsa",
+    "Soda",
+    "Popcorn",
+    "Pretzels",
+    "Dip",
+    "Flour",
+    "Sugar",
+    "Baking Powder",
+    "Chocolate Chips",
+    "Vanilla Extract",
+    "Apple",
+    "Banana",
+    "Yogurt",
+    "Granola",
+    "Honey"
+  ],
+  "clusters": [
+    [
+      "Milk",
+      "Bread",
+      "Eggs",
+      "Butter",
+      "Coffee",
+      "Cereal",
+      "Orange Juice"
+    ],
+    [
+      "Pasta",
+      "Tomato Sauce",
+      "Parmesan Cheese",
+      "Olive Oil",
+      "Garlic",
+      "Basil"
+    ],
+    [
+      "Potato Chips",
+      "Salsa",
+      "Soda",
+      "Popcorn",
+      "Pretzels",
+      "Dip"
+    ],
+    [
+      "Flour",
+      "Sugar",
+      "Baking Powder",
+      "Chocolate Chips",
+      "Vanilla Extract"
+    ],
+    [
+      "Apple",
+      "Banana",
+      "Yogurt",
+      "Granola",
+      "Honey"
+    ]
+  ],
+  "metrics": {
+    "baseline": {
+      "size_kb": 122.58,
+      "top1_acc": 34.02,
+      "top3_acc": 77.73,
+      "latency_ms": 0.007,
+      "size_reduction_pct": 0.0
+    },
+    "dynamic_int8": {
+      "size_kb": 41.27,
+      "top1_acc": 34.02,
+      "top3_acc": 77.46,
+      "latency_ms": 0.029,
+      "size_reduction_pct": 66.33
+    },
+    "static_int8": {
+      "size_kb": 47.6,
+      "top1_acc": 33.61,
+      "top3_acc": 78.14,
+      "latency_ms": 0.021,
+      "size_reduction_pct": 61.17
+    }
+  }
+}
